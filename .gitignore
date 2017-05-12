@@ -1,0 +1,12 @@
+Leiningen.gitignore
+/target
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+/.idea
+/codecov-clojure.iml
