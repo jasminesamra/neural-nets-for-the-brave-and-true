@@ -13,8 +13,32 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Leiningen: byte-streams:0.2.0" level="project" />
+    <orderEntry type="library" name="Leiningen: clj-tuple:0.2.2" level="project" />
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.4" level="project" />
+    <orderEntry type="library" name="Leiningen: manifold:0.1.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.commons/commons-math3:3.6.1" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.8.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/core.async:0.2.395" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/core.cache:0.6.5" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/core.memoize:0.5.9" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/data.priority-map:0.0.7" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.analyzer.jvm:0.6.10" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.analyzer:0.6.9" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.logging:0.3.1" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.12" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.reader:1.0.0-beta2" level="project" />
+    <orderEntry type="library" name="Leiningen: org.jocl/jocl-blast:0.10.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.jocl/jocl:2.0.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.ow2.asm/asm-all:4.2" level="project" />
+    <orderEntry type="library" name="Leiningen: potemkin:0.4.2" level="project" />
+    <orderEntry type="library" name="Leiningen: primitive-math:0.1.4" level="project" />
+    <orderEntry type="library" name="Leiningen: riddley:0.1.11" level="project" />
+    <orderEntry type="library" name="Leiningen: uncomplicate/clojurecl:0.7.1" level="project" />
+    <orderEntry type="library" name="Leiningen: uncomplicate/commons:0.3.0" level="project" />
+    <orderEntry type="library" name="Leiningen: uncomplicate/fluokitten:0.6.0" level="project" />
+    <orderEntry type="library" name="Leiningen: uncomplicate/neanderthal-native:0.9.0" level="project" />
+    <orderEntry type="library" name="Leiningen: uncomplicate/neanderthal:0.10.0" level="project" />
+    <orderEntry type="library" name="Leiningen: vertigo:0.1.4" level="project" />
   </component>
 </module>
