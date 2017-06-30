@@ -16,7 +16,9 @@
     (/ 1 (+ 1 exponent))))
 
 (defn feed-layer [inputs layer]
-  (map (fn [neuron] (sigmoid (dot-product neuron inputs))) layer))
+  (map (fn [neuron]
+         (sigmoid (dot-product neuron inputs)))
+       layer))
 
 (defn run-net [net inputs]
   (let [results1 (feed-layer inputs (first net))
