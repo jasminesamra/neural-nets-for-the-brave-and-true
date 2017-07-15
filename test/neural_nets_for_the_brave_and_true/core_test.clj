@@ -12,17 +12,21 @@
 
 (def trained-xor [layer1 layer2])
 
-(defn train-net [net data labels]
+(defn train-net [net input target]
   net)
+
+(deftest activation-function-works
+  (testing "s(3) = .9526"
+    ( is (= (activation-fn 3) 0.9525741254035024))))
+
+(deftest dot-product-works
+  (testing "[0.5 1.0] . [0.2 0.3] == 0.4"
+    (is (= (dot-product [0.5 1.0] [0.2 0.3]) 0.4))))
 
 (deftest train-single-neuron-net
   (testing
     (is (= (train-net [[[0.5 0.7]]] [1 0.5] [1])
            [[[0.4 0.4]]]))))
-
-(deftest dot-product-works
-  (testing "[0.5 1.0] . [0.2 0.3] == 0.4"
-    (is (= (dot-product [0.5 1.0] [0.2 0.3]) 0.4))))
 
 (deftest trained-zero-zero-is-zero
   (testing "0 ^ 0 == 0"

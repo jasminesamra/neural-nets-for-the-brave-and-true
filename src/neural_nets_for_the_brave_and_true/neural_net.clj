@@ -8,19 +8,29 @@
 
 (def e 2.7182818)
 
+(defn activation-fn [x]
+  (/ 1 (+ 1 (Math/pow e (- x)))))
+
+(defn d-activation-fn [x]
+  (* x (- 1 (activation-fn x))))
+
 (defn dot-product [v1 v2]
   (reduce + (map (partial apply *) (map vector v1 v2))))
 
-(defn sigmoid [z]
-  (let [exponent (Math/pow e (- z))]
-    (/ 1 (+ 1 exponent))))
-
-(defn feed-layer [inputs layer]
+(defn feed-forward-layer [inputs layer]
   (map (fn [neuron]
-         (sigmoid (dot-product neuron inputs)))
+         (activation-fn (dot-product neuron inputs)))
        layer))
 
+(defn delta-output-layer [target output]
+  (* (d-activation-fn output) 
+     (- target output)))
+
+(defn delta-hidden-layer [output-delta neuron-values weights]
+  (mapv * (map d-activation-fn neuron-values) 
+          (map (partial * output-delta) weights)))
+
 (defn run-net [net inputs]
-  (let [results1 (feed-layer inputs (first net))
-        results2 (feed-layer results1 (second net))]
-    results2))
+  (let [hidden-output (feed-forward-layer inputs (first net))
+        output-output (feed-forward-layer hidden-output (second net))]
+    output-output))
